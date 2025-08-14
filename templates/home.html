@@ -10,6 +10,7 @@
             height: 360px;
             width:100%;
             object-fit: cover;
+            margin-bottom: 16px;
         }
 
     </style>
@@ -17,16 +18,21 @@
   
 </head>
 <body>
+    {% include 'nav.html' %}
+    <img  class="img-fluid" id="banner" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29kaW5nfGVufDB8fDB8fHww" height=240px , width= 240px >
+    <h2 class="text-center  mt-2 mb-4">About company</h2>
     <div class = "container">
 
         <nav><a href="about.html"></a></nav>
-        hello there, you will learn about web dev using python and it's frameworks
+        <!-- <h1 class="text-center mt-2 mb-4" class="fw-bolder">{{company_name}} carriers </h1> -->
 
-        <h1 class="text-center mt-2 mb-4" class="fw-bolder">{{company_name}} carriers </h1>
+    <div class="row" style="margin-bottom: 17px;">
+        <div class="col-md-6"><p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita dicta perspiciatis iusto voluptate rerum suscipit animi nisi, nesciunt ab sit, quaerat libero repellendus pariatur. Obcaecati nam iure earum aperiam, illum possimus eligendi.</p></div>
+        
+        <div class="d-none d-md-block col-6"><img src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="height: 320px;border-radius: 5px;"></div>
+        
 
-        <img  class="img-fluid" id="banner" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29kaW5nfGVufDB8fDB8fHww" height=240px , width= 240px >
-        <h2 class="text-center  mt-2 mb-4">About company</h2>
-        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita dicta perspiciatis iusto voluptate rerum suscipit animi nisi, nesciunt ab sit, quaerat libero repellendus pariatur. Obcaecati nam iure earum aperiam, illum possimus eligendi.</p>
+    </div>
         <h2 class="text-center mt-2 mb-4">
             job openings
         </h2>
@@ -40,9 +46,10 @@
         
         <div style="text-align: center;">
 
-            <button class="btn btn-primary btn-lg">Contact us</button>
-            <footer class="text-center mt-4">Syed Arman Ali | 2025 | &copy;Rights are resreved</footer>
+            <a href="mailto:technicalarman.2003@gmail.com?subject=Query%20related%20to%20compant&body=%3Cjot%20down%20your%20thoughts%20here%3E" class="btn btn-primary btn-lg">Contact us</a>
+            <!-- <footer class="text-center mt-4">Syed Arman Ali | 2025 | &copy;Rights are resreved</footer> -->
         </div>
     </div>
+    {% include "footer.html" %}
 </body>
 </html>
